@@ -59,6 +59,20 @@ Ele é o ambiente de execução do **JavaScript**, também conhecido como **Runt
 
 É uma ferramenta para criação na área de Front-End, oferencendo um ambiente de desenvolvimento mais eficiente e produtivo.
 
+## Aula 03 - Primeira Aplicação, Hello World
 
+No terminal usar:
 
+```bash
+cd <caminho do diretório>
 
+# Por meio do NPM você deve usar o seguinte comando:
+
+npm create vite@latest
+
+# Depois ele prossegue mostrando o resto do procedimento e retorna um link da hospedagem local.
+```
+
+![demonstracao_vite.png](/home/invalidblock/Documents/notes-course-js-react/scr/demonstracao_vite.png)
+
+Para ver as edições acontecendo na aplicação é só seguir como o **Vite** menciona: Edite o `src/App.jsx`!
