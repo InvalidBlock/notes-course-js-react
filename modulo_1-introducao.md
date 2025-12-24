@@ -73,6 +73,68 @@ npm create vite@latest
 # Depois ele prossegue mostrando o resto do procedimento e retorna um link da hospedagem local.
 ```
 
-![demonstracao_vite.png](/home/invalidblock/Documents/notes-course-js-react/scr/demonstracao_vite.png)
+![demonstracao_vite.png](/scr/demonstracao_vite.png)
 
 Para ver as edições acontecendo na aplicação é só seguir como o **Vite** menciona: Edite o `src/App.jsx`!
+
+O primeiro projeto que vai ser desenvolvido é do "Hello World!", é cliche, mas apenas para aprender e ver superficialmente como as ferramentas funcionam e se interagem.
+
+Links da localização dos arquivos:
+
+- [src/App.jsx](hello-world/src/App.jsx)
+
+## Aula 04 - Estrutura dos arquivos do projeto
+
+### Pastas
+- `node_modules`, ela é gerenciada pelo **NPM** e contém as bibliotecas e dependências.
+> Essa pasta não necessáriamente precisa estar no computador, ela é a que mais contém arquivos, porém se não houver ela é instalada automáticamente. Por exemplo quando vai transferir o projeto para um diferente computador.
+~Professor Eduardo Gomes
+- `public`, é uma pasta estática, ou seja, não se altera, ela pode conter as imagens e links fixos, pois não vai ser alterada e levada da mesma forma que estava.
+- `src`, é a pasta fonte, ou seja, onde estão os scripts, componentes e fontes, dentre outras coisas. Ela não tem acesso pública, apenas por link e pela aplicação.
+
+### Arquivos Pré Gerados:
+- `App.css`, é o arquivo que contém os estilos, vulgo a parte que faz uso do CSS na página.
+- `index.css`, é o mesmo que `App.css`, mas seria o estilo global dos outras páginas e componentes, pois é carregado pelo `index.html`.
+- `App.jsx`, seria a aplicação e o arquivo lógico, onde realiza o JS (JavaScript) e o React.
+
+### Parte Lógica:
+
+```JavaScript
+    import './App.css'
+
+    function App() {
+    return (
+        <>
+        <h1>Hello world!!!</h1>
+        <p>Bem vindo a minha página</p>
+        </>
+    )
+    }
+```
+
+A função seria o **componente**, `function` é o tipo, no caso função, o `App` é o nome da função.
+
+- `main.jsx`, é a parte principal;
+
+Destrinchando o `main.jsx` um pouco é primeiro necessário ver o `index.html`.
+
+```html
+...
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+...
+```
+
+Veja que na `<body>`, o corpo da página é chamado a `<div id="root"></div>`, esse `id=root` vai ser o que é implantado pelo `main.jsx`. Indo para o mesmo:
+
+``` JavaScript
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+```
+
+O `main.jsx` é o código-fonte praticamente, ele é o que define o `id="root"` que no `index.html` era chamado. E nele há a presença do `<App />` que se refere a aplicação do `App.jsx`, ou seja, no corpo da página, por enquanto há apenas a apresentação da aplicação **App** definida em `App.jsx`.
