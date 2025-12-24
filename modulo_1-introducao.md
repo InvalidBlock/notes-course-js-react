@@ -1,8 +1,10 @@
+[MD RAIZ](anotacoes_modulo_1.md)
+
 # Módulo 1 - Introdução
 
 **Data de Inicio:** 23/12/2025
 
-**Data de Término:**
+**Data de Término:** 23/12/2025
 
 ### Aulas:
 

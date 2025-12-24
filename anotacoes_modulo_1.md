@@ -7,4 +7,5 @@
 
 [Link do Roteiro do Curso](https://drive.google.com/file/d/1ChehqBDr-ncAFzottUquGOzfL5Mbi5Uv/view?usp=sharing)
 
-[# Módulo 1 - Introdução](modulo_1-introducao.md)
+- [Módulo 1 - Introdução](modulo_1-introducao.md)
+- [Módulo 2 - Fundamentos do React](modulo_2-fundamentos_do_react.md)
