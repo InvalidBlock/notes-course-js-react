@@ -1,8 +1,9 @@
-import React from 'react'
-
 function MeuPrimeiroComponente() {
   return (
-    <div>MeuPrimeiroComponente</div>
+    <div>
+        <h1>Meu Primeiro Componente</h1>
+        <p>Exemplo de criação de componente</p>
+    </div>
   )
 }
 
