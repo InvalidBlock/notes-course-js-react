@@ -63,3 +63,13 @@ Para comentar em JSX, não se faz apenas o uso do // ou /**/, para isso, deve se
 ## Aula 09 - Template Expressions
 
 O conceito **Template Expression** é o que fazemos com as chaves, ``{}``, ou seja, incorporar um código **JS**, 
+
+## Aula 10 - Eventos no Front End
+
+Os eventos são usados para **capturar interações do usuário** e **responder elas de forma dinâmica**, são nomeados da forma **camelCase**, ou seja a **primeira letra** minúscula e a seguir a primeira é maiuscula, exemplo: ``onChange``, ``onStart``, **...**.
+
+![Eventos Básicos, retirado da aula](scr/eventos_basicos.png)
+###### Fonte: Aula 10 - Eventos no Front End (1:55)
+
+## Aula 11 - Funções de Renderização
+
