@@ -52,3 +52,10 @@ Um dos conceitos centrais do React, ele faz a **componentização**, ou seja, de
 Com o uso da extensão instalada nas aulas anteriores (Módulo 1), pode ser usado o código ``rfce`` para a criação da base de um componente:
 
 ![base_componente_com_rfce.png](scr/base_componente_com_rfce.png)
+
+## Aula 08 - Componentes em JSX
+
+Para comentar em JSX, não se faz apenas o uso do // ou /**/, para isso, deve ser aberto o JS dentro do código com as chaves ``{}``, ficando dessa forma:
+``` JSX
+{/*Primeiro componente criado no curso*/}
+```
