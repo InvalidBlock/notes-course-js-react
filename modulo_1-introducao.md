@@ -100,7 +100,7 @@ Links da localização dos arquivos:
 ~Professor Eduardo Gomes
 
 - `public`, é uma pasta estática, ou seja, não se altera, ela pode conter as imagens e links fixos, pois não vai ser alterada e levada da mesma forma que estava.
-- `src`, é a pasta fonte, ou seja, onde estão os scripts, componentes e fontes, dentre outras coisas. Ela não tem acesso pública, apenas por link e pela aplicação.
+- `src`, é a pasta fonte, ou seja, onde estão os scripts, componentes e fontes, dentre outras coisas. Ela não tem acesso pública, apenas pela aplicação.
 
 #### Arquivos Pré Gerados
 

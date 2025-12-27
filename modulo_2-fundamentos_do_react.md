@@ -77,3 +77,14 @@ Os eventos são usados para **capturar interações do usuário** e **responder 
 ### Aula 11 - Funções de Renderização
 
 As coisas não precisam ser renderizadas apenas de forma direta dentro do ``return``, eles podem ser colocados no **JS**, e passados para renderizar na parte **HTML**.
+
+### Aula 12 - Imagens no React
+
+As imagens são um elemento muito importante na composição da UI e são amplamente utilizadas, que para sua implementação vária do modo e forma que vai ser usada o que ocasiona no lugar onde vai estar insirida no projeto.
+
+> As imagens de forma mais técnica são chamadas de **Ativos** ~ Professor Eduardo Gomes
+
+Você pode colocar as imagens na pasta ``public``, que está destinado para **Ativos** fixos, ou seja, aqueles que não vão ter alteração.
+Além da pasta ``public``, você pode colocar o **Ativo** na pasta *source*, ``src``, em que está destinado os scripts, componentes, **...**, coloca-se o ativo na pasta ``src``quando vai ter alterações nele, por exemplo, um jogo em que vai ser trocada e alterada as propriedades da imagem durante a execução de forma dinâmica.
+
+Dentro da pasta ``src``, se for um ativo que vai ser utilizado em mais componentes coloca-se na pasta ``assets``, porém se for estar ligada diretamente a um componente, pode ser criado uma pasta para o componente contendo os ativos ligados diretamente a ele.
