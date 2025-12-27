@@ -1,4 +1,5 @@
 # Anotações do Curso
+
 ## Curso: Programação Frontend com a Biblioteca React e Javascript
 
 **Data em que comecei a estudar:** 23/12/2025

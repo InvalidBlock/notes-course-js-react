@@ -1,12 +1,13 @@
-[MD RAIZ](anotacoes_modulo_1.md)
 
 # Módulo 2 - Fundamentos do React
 
-**Data de Inicio:** 
+[MD RAIZ](anotacoes_modulo_1.md)
 
-**Data de Término:** 
+**Data de Inicio:** 27/12/2025
 
-### Aulas:
+**Data de Término:**
+
+## Aulas
 
 - [06 - O que é JSX](https://youtu.be/PYARrSEw1z8)
 - [07 - O que é um componente](https://youtu.be/-xwAGEreQS8)
@@ -33,43 +34,46 @@
 - [28 - Finalização do Módulo](https://youtu.be/OlyRYMLFf0M)
 
 .
-# Anotações:
 
-## Aula 06 - O que é JSX:
-    
-Também conhecido como **JavaScript XML**, consiste em uma extensão para melhor produtividade e legibilidade, pois ela faz com que consiga ser integrado o **HTML** dentro do **código JS**, modularizando isto e facilitando a manutenção e a encontrar as funções. Também ele facilita com o que o dev consiga ter uma visualização da **interface de usuário (UI)**. 
+## Anotações
 
-> Deve se atentar que a **declaração de classes** no **HTML em JSX** é diferente, pois ``class`` é reservado tanto no **HTML** quanto no **JS**, por isso quando vai se referir a declaração de classes no HTML com o JSX, é usado ``className``, assim podendo ser acessado pelo **CSS**. ~ Professor Eduardo Gomes
+### Aula 06 - O que é JSX
 
-> As **tags** em **HTML** são escritas toda em **minúsculas**; E para componentes personalizados do **JSX** é feito de forma capitalizada, ou seja, com a **Primeira Letra Maiuscúla.**. ~ Professor Eduardo Gomes
+Também conhecido como **JavaScript XML**, consiste em uma extensão para melhor produtividade e legibilidade, pois ela faz com que consiga ser integrado o **HTML** dentro do **código JS**, modularizando isto e facilitando a manutenção e a encontrar as funções. Também ele facilita com o que o dev consiga ter uma visualização da **interface de usuário (UI)**.
 
-## Aula 07 - O que é um componente
+> Deve se atentar que a **declaração de classes** no **HTML em JSX** é diferente, pois ``class`` é reservado tanto no **HTML** quanto no **JS**, por isso quando vai se referir a declaração de classes no HTML com o JSX, é usado ``className``, assim podendo ser acessado pelo **CSS**.
+As **tags** em **HTML** são escritas toda em **minúsculas**; E para componentes personalizados do **JSX** é feito de forma capitalizada, ou seja, com a **Primeira Letra Maiuscúla.**. ~ Professor Eduardo Gomes
+
+### Aula 07 - O que é um componente
 
 Um dos conceitos centrais do React, ele faz a **componentização**, ou seja, decompor a interface do usuário em vários elementos.
 
-### Prática:
+#### Prática
 
 Com o uso da extensão instalada nas aulas anteriores (Módulo 1), pode ser usado o código ``rfce`` para a criação da base de um componente:
 
 ![base_componente_com_rfce.png](scr/base_componente_com_rfce.png)
 
-## Aula 08 - Componentes em JSX
+### Aula 08 - Componentes em JSX
 
 Para comentar em JSX, não se faz apenas o uso do // ou /**/, para isso, deve ser aberto o JS dentro do código com as chaves ``{}``, ficando dessa forma:
+
 ``` JSX
 {/*Primeiro componente criado no curso*/}
 ```
 
-## Aula 09 - Template Expressions
+### Aula 09 - Template Expressions
 
-O conceito **Template Expression** é o que fazemos com as chaves, ``{}``, ou seja, incorporar um código **JS**, 
+O conceito **Template Expression** é o que fazemos com as chaves, ``{}``, ou seja, incorporar um código **JS**,
 
-## Aula 10 - Eventos no Front End
+### Aula 10 - Eventos no Front End
 
 Os eventos são usados para **capturar interações do usuário** e **responder elas de forma dinâmica**, são nomeados da forma **camelCase**, ou seja a **primeira letra** minúscula e a seguir a primeira é maiuscula, exemplo: ``onChange``, ``onStart``, **...**.
 
 ![Eventos Básicos, retirado da aula](scr/eventos_basicos.png)
-###### Fonte: Aula 10 - Eventos no Front End (1:55)
 
-## Aula 11 - Funções de Renderização
+**Fonte: Aula 10 - Eventos no Front End (1:55)**
 
+### Aula 11 - Funções de Renderização
+
+As coisas não precisam ser renderizadas apenas de forma direta dentro do ``return``, eles podem ser colocados no **JS**, e passados para renderizar na parte **HTML**.

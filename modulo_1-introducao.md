@@ -1,12 +1,13 @@
-[MD RAIZ](anotacoes_modulo_1.md)
 
 # Módulo 1 - Introdução
+
+[MD RAIZ](anotacoes_modulo_1.md)
 
 **Data de Inicio:** 23/12/2025
 
 **Data de Término:** 23/12/2025
 
-### Aulas:
+## Aulas
 
 - [01 - Introdução](https://youtu.be/A1SHfUo2xsI)
 - [02 - Preparação do Ambiente](https://youtu.be/4ZHHsGL5OE8)
@@ -15,21 +16,22 @@
 - [05 - Dicas como aproveitar melhor o curso](https://youtu.be/MHBWONISnmc)
 
 .
-# Anotações:
 
-## 01 - Introdução:
+## Anotações
 
-### React:
+### 01 - Introdução
 
-#### O que é:
+#### React
+
+##### O que é
 
 Ele é uma biblioteca *JavaScript* desenvolvida pelo **Facebook**, atualmente é amplamente utilizada na criação de interfaces de usuário dinâmicas e interativas, também conhecida como *Single Page Application*(**SPA**)
 
-###### ATENÇÃO!
+###### ATENÇÃO
 
 > Foi *freezado* que o *React* é uma biblioteca e não um *framework*, pois da versatilidade diferentemente do que o framework que precisa de seguir o formato estabelecido, ou seja, no React não precisa ser trabalhado de forma rígida e implantada no projeto até posteriormente se houver adaptações. ~ Professor Eduardo Gomes
 
-##### Termos Técnicos:
+###### 1.1 Termos Técnicos
 
 - **JavaScript:** Linguagem de programação, utilizada principamente para inserir interação nas páginas web, permitindo criar lógica, manipular o *DOM*, lidar com eventos e se comunicar com servidores.
 - - **DOM (Document Object Model):** Representação em forma de árvore da estrutura HTML da página, que permite ao JavaScript acessar, modificar e manipular os elementos e conteúdos dinamicamente.
@@ -37,31 +39,34 @@ Ele é uma biblioteca *JavaScript* desenvolvida pelo **Facebook**, atualmente é
 - - **HTML:** Linguagem Markdown (Marcação) usada para estruturar o conteúdo de uma página web, definindo elementos como textos, imagens, links, formulários e botões.
 - **Framework:** Conjunto de ferramentas, bibliotecas e padrões que fornece uma estrutura pronta para o desenvolvimento de aplicações, ajudando a organizar o código e acelerar o desenvolvimento.
 
-#### Componentes:
+##### Componentes
+
 O **React** utiliza o conceito de **componentes** que funcionam como blocos reutilizáveis e que se necessitar manutenção, todos os sites e parte deles que usam esse componente serão atualizados juntamente.
 
 > Mesma ideia que um Bloco no Autocad e um Prefab na Unity, ou seja, é um bloco padrão, modificável que você define e reutiliza em outras partes da aplicação. ~ Autor
 
-#### Otimização:
+##### Otimização
+
 O **React** é popular pela sua boa performace e desempenho, que acontece devido a utilização do *Virtual DOM*, minimizando as atualizações diretas do *DOM*.
 
-###### Termos Técnicos:
+###### 1.2 Termos Técnicos
+
 - **DOM:** Representação em forma de árvore da estrutura HTML da página, que permite ao JavaScript acessar, modificar e manipular os elementos e conteúdos dinamicamente.
 - **Virtual DOM:** Representação virtual do DOM, mas mantida em memória, usada por bibliotecas/frameworks como o React para otimizar atualizações na interface, aplicando ao DOM real apenas as mudanças necessárias.
 
-#### Node.js:
+#### Node.js
 
 Ele é o ambiente de execução do **JavaScript**, também conhecido como **Runtime**, permitindo utilizar o JS do lado do servidor e back-end.
 
-#### NPM (Node Package Manager):
+##### NPM (Node Package Manager)
 
 É o gerenciador de pacotes (módulos) padrão do Node.js, permitindo gerenciar bibliotecas e dependências.
 
-#### Vite:
+#### Vite
 
 É uma ferramenta para criação na área de Front-End, oferencendo um ambiente de desenvolvimento mais eficiente e produtivo.
 
-## Aula 03 - Primeira Aplicação, Hello World
+### Aula 03 - Primeira Aplicação, Hello World
 
 No terminal usar:
 
@@ -85,21 +90,25 @@ Links da localização dos arquivos:
 
 - [src/App.jsx](Projetos/hello-world/src/App.jsx)
 
-## Aula 04 - Estrutura dos arquivos do projeto
+### Aula 04 - Estrutura dos arquivos do projeto
 
-### Pastas
+#### Pastas
+
 - `node_modules`, ela é gerenciada pelo **NPM** e contém as bibliotecas e dependências.
+
 > Essa pasta não necessáriamente precisa estar no computador, ela é a que mais contém arquivos, porém se não houver ela é instalada automáticamente. Por exemplo quando vai transferir o projeto para um diferente computador.
 ~Professor Eduardo Gomes
+
 - `public`, é uma pasta estática, ou seja, não se altera, ela pode conter as imagens e links fixos, pois não vai ser alterada e levada da mesma forma que estava.
 - `src`, é a pasta fonte, ou seja, onde estão os scripts, componentes e fontes, dentre outras coisas. Ela não tem acesso pública, apenas por link e pela aplicação.
 
-### Arquivos Pré Gerados:
+#### Arquivos Pré Gerados
+
 - `App.css`, é o arquivo que contém os estilos, vulgo a parte que faz uso do CSS na página.
 - `index.css`, é o mesmo que `App.css`, mas seria o estilo global dos outras páginas e componentes, pois é carregado pelo `index.html`.
 - `App.jsx`, seria a aplicação e o arquivo lógico, onde realiza o JS (JavaScript) e o React.
 
-### Parte Lógica:
+#### Parte Lógica
 
 ```JavaScript
     import './App.css'
