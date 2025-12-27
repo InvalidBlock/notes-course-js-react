@@ -59,3 +59,7 @@ Para comentar em JSX, não se faz apenas o uso do // ou /**/, para isso, deve se
 ``` JSX
 {/*Primeiro componente criado no curso*/}
 ```
+
+## Aula 09 - Template Expressions
+
+O conceito **Template Expression** é o que fazemos com as chaves, ``{}``, ou seja, incorporar um código **JS**, 
