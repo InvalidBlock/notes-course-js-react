@@ -83,7 +83,7 @@ O primeiro projeto que vai ser desenvolvido é do "Hello World!", é cliche, mas
 
 Links da localização dos arquivos:
 
-- [src/App.jsx](hello-world/src/App.jsx)
+- [src/App.jsx](Projetos/hello-world/src/App.jsx)
 
 ## Aula 04 - Estrutura dos arquivos do projeto
 
