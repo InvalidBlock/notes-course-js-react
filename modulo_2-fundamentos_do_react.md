@@ -48,7 +48,7 @@ As **tags** em **HTML** são escritas toda em **minúsculas**; E para componente
 
 Um dos conceitos centrais do React, ele faz a **componentização**, ou seja, decompor a interface do usuário em vários elementos.
 
-#### Prática
+#### 7.1 Prática
 
 Com o uso da extensão instalada nas aulas anteriores (Módulo 1), pode ser usado o código ``rfce`` para a criação da base de um componente:
 
@@ -88,3 +88,36 @@ Você pode colocar as imagens na pasta ``public``, que está destinado para **At
 Além da pasta ``public``, você pode colocar o **Ativo** na pasta *source*, ``src``, em que está destinado os scripts, componentes, **...**, coloca-se o ativo na pasta ``src``quando vai ter alterações nele, por exemplo, um jogo em que vai ser trocada e alterada as propriedades da imagem durante a execução de forma dinâmica.
 
 Dentro da pasta ``src``, se for um ativo que vai ser utilizado em mais componentes coloca-se na pasta ``assets``, porém se for estar ligada diretamente a um componente, pode ser criado uma pasta para o componente contendo os ativos ligados diretamente a ele.
+
+### Aula 13 - Ciclo de Vida e Estados de um Componente
+
+Seria as **etapas** que um **componente** passa desde sua criação até sua remoção na página. Incluindo principalmente as **fases de inicialização, montagem, atualização e desmontagem**.
+
+![Ciclo de vida de um componente no React](./scr/ciclo_de_vida_de_um_componente.png)
+
+**Estado** seria a propriedade do componente, em que pode ser alterado ao longo das etapas. Na **inicialização**, é passado as propriedades iniciais, ou seja, o estado inicial, na **montagem** ele é formado para a apresentação na aplicação de acordo com o que foi passado na inicialização, a **atualização** é quando está aparecendo e se houver uma atualização nas suas propriedades o estado vai ser alterado, na **desmontagem** é quando o estado muda para a retirada dele na aplicação. Isso é **quase o mesmo processo** que há de ciclo de vida em uma **aplicação** também.
+
+### Aula 14 - Hooks e useState
+
+O **Hook** de forma bem resumida são **funções** que **facilitam o uso de recursos avançados** de componentes funcionais no React.
+Permitindo **armazenar informações**, **chamadas de estado** e **executar ações** em momentos específicos do ciclo de vida do componente.
+
+**Exemplo:** Quando você vai criar o **botão que aumenta o contador**, a **váriavel muda**, mas o **parágrafo** responsável por mostrar o valor atual **não é re-renderizado**, necessitando de recarregar a págian (**F5**), por isso ele necessíta de um **Hook** que faça ele ser re-renderizado.
+
+#### 14.1 Prática
+
+![O código do contador sem o uso do hook](./scr/codigo_do_contador_sem_o_hook.png)
+
+O que vai ser necessário usar é o **Hook**, ``useState``, ele é o mais utilizado no React, pois serve para armazenar um **estado**.
+Por que utlizaremos esse **Hook** invés de armazenar em uma váriavel? Porquê ele dessa forma vai armazenar e **toda vez que alterar**, apenas
+alterar o elemento que use aquele **estado**.
+
+![O código do contador com o uso do Hook](./scr/codigo_do_contador_com_o_hook.png)
+
+Caso você vai usar uma váriavel que **altera apenas dentro da função** e **não vai usa-la depois**, pode ser declarada da **forma tradicional**, ``let``, mas
+se for **vincular ela a um elemento da página** deve ser utilizado um **Hook**, principalmente, ``useState``.
+
+Ou seja:
+
+**Não precisa** renderizar **->** ``let``
+**Precisa** renderizar **->** ``useState``

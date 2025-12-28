@@ -78,6 +78,9 @@ cd <caminho do diretório>
 npm create vite@latest
 
 # Depois ele prossegue mostrando o resto do procedimento e retorna um link da hospedagem local.
+
+npm run dev
+# Para caso você só queira rodar o código
 ```
 
 ![demonstracao_vite.png](/scr/demonstracao_vite.png)
