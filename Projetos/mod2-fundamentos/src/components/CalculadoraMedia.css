@@ -1,0 +1,92 @@
+/* Container principal da calculadora */
+.calculadora-container {
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Borda */
+    border: 2px solid #4caf9e;
+    border-radius: 18px;
+
+    /* Espaçamento e tamanho */
+    padding: 25px;
+    width: 400px;
+
+    /* Fundo */
+    background-color: #000000;
+
+}
+
+/* Grupo de inputs */
+.input-group {
+
+    /* Espaçamento entre os inputs */
+    margin-bottom: 10px;
+
+    /* Espaçamento interno */
+    width: 100%;
+}
+
+/* Elemento label */
+label {
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+
+    /* Espaçamento */
+    margin-bottom: 5px;
+
+    /* Cor e fonte */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    
+}
+
+/* Elemento input */
+input {
+    /* Tamanho */
+    width: 100%;
+    padding: 5px;
+
+    /* Borda */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    /* Fonte */
+    font-size: 18px;
+}
+
+/* Botão de calcular */
+.calcular-button {
+    
+    /* Fundo e cor da fonte */
+    background-color: #ffffff13;
+    color: white;
+    font-size: 18px;
+
+    /* Espaçamento */
+    padding: 10px 20px;
+
+    /* Borda */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    /* Cursor */
+    cursor: pointer;
+
+}
+
+/* Efeito hover no botão */
+.calcular-button:hover {
+    
+    /* Cores */
+    background-color: #00f5f5af;
+    color: white;
+
+}

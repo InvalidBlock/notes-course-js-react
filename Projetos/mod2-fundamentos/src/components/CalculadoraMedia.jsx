@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
+import './CalculadoraMedia.css'
 
 function CalculadoraMedia() {
     const [numero1, setNumero1] = useState("");
     const [numero2, setNumero2] = useState("");
     const [media, setMedia] = useState(0);
 
-    function calcularMedia(){
-        const mediaCalculada = ((parseFloat(numero1) + parseFloat(numero2))/2).toFixed(2);
+    function calcularMedia() {
+        const mediaCalculada = ((parseFloat(numero1) + parseFloat(numero2)) / 2).toFixed(2);
         // O parseFloat é a forma que se converte uma string em número decimal no JS, o mesmo que toFloat do C#
         // toFixed() define o número de casas decimais que o número terá.
         setMedia(mediaCalculada);
@@ -22,7 +23,7 @@ function CalculadoraMedia() {
 
                 <label>
                     Número 1:
-                    <input type="number" autoFocus onChange={(e)=>setNumero1(e.target.value)} value={numero1}/>
+                    <input type="number" autoFocus onChange={(e) => setNumero1(e.target.value)} value={numero1} />
                     {/* 
                     O autoFocus faz com que o cursor já inicie nesse input 
                     onChange captura o valor digitado e atualiza a useState
@@ -43,7 +44,7 @@ function CalculadoraMedia() {
 
                 <label>
                     Número 2:
-                    <input type="number" onChange={(e)=>setNumero2(e.target.value)} value={numero2}/>
+                    <input type="number" onChange={(e) => setNumero2(e.target.value)} value={numero2} />
                 </label>
 
             </div>
