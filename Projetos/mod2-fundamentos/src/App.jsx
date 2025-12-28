@@ -4,6 +4,7 @@ import MeuPrimeiroComponente from './components/MeuPrimeiroComponente'
 import Renderizacao from './components/Renderizacao'
 import ImagensReact from './components/ImagensReact'
 import Contador from './components/Contador'
+import CalculadoraMedia from './components/CalculadoraMedia'
 
 function App() {
   return (
@@ -13,8 +14,11 @@ function App() {
       <Botao />
       <Renderizacao />
       <ImagensReact />
-      */}
       <Contador />
+      */}
+      
+      <CalculadoraMedia />
+
     </>
   )
 }
