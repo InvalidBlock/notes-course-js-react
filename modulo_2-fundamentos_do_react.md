@@ -294,3 +294,9 @@ input {
 
 }
 ```
+
+### Aula 17 - Exercício do Volume da Piscina
+
+Foi feito praticamente o mesmo código fonte da calculadora, só mudou a quantidade de variáveis, inputs do usuário e a conta realizada.
+
+![Imagem da aplicação](./scr/exercicio_piscina.png)
