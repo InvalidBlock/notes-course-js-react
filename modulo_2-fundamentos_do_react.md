@@ -300,3 +300,8 @@ input {
 Foi feito praticamente o mesmo código fonte da calculadora, só mudou a quantidade de variáveis, inputs do usuário e a conta realizada.
 
 ![Imagem da aplicação](./scr/exercicio_piscina.png)
+
+### Aula 18 - CSS Global no React
+
+Aqui é apenas demonstrado como é aplicado o CSS de forma global para todos com os componentes e as configurações que já vem criadas pelo Vite no inicio do projeto.
+A configuração de CSS Global do Vite é apresentado no arquivo ``index.css``.
