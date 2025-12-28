@@ -1,0 +1,9 @@
+.ativo{
+    color:aqua;
+    background-color: blueviolet;
+}
+
+.inativo{
+    color:gray;
+    background-color: black;
+}
