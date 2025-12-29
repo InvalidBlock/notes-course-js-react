@@ -1,0 +1,10 @@
+.ativado {
+    color: greenyellow;
+}
+.desativado {
+    color: red;
+}
+
+button {
+    padding: 10px 20px;
+}

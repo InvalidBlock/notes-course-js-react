@@ -305,3 +305,179 @@ Foi feito praticamente o mesmo código fonte da calculadora, só mudou a quantid
 
 Aqui é apenas demonstrado como é aplicado o CSS de forma global para todos com os componentes e as configurações que já vem criadas pelo Vite no inicio do projeto.
 A configuração de CSS Global do Vite é apresentado no arquivo ``index.css``.
+
+### Aula 19 - CSS Componentes
+
+O **CSS** em componentes pode ser feito da forma tradicional apenas importanto um arquivo CSS padrão como ``import './MeuComponenteCSS.css'``, mas isso pode causar vazamentos ao grupo que esse componente altera tiver o mesmo nome que algum outro componente tenha também, atráves do ``App.jsx``.
+
+**Demonstração:**
+
+![JSX do Componente](./scr/texto%20vazado%20CSS%20Componente%20JSX.png)
+
+![CSS do Componente](./scr/texto%20vazado%20CSS%20Componente%20CSS.png)
+
+![App.jsx com o título que foi vazado](./scr/texto%20vazado%20CSS.png)
+
+![Texto vazado na aplicação](./scr/texto%20vazado.png)
+
+Para contornar isso pode ser alterado a ``className``para algo do tipo ``NomeDoComponente-Conteúdo``, exemplo, ``<h2 className='ComponenteCSS-title'>TITULO</h2>``
+
+#### CSS Modules
+
+Assim se importa o ``styles``, não vazando para outro componente e pegando apenas o estilo do **CSS** importado.
+
+O código **JSX** fica desta forma.
+
+``` JSX
+import React from 'react'
+import styles from './ComponenteCSS.module.css'
+
+function ComponenteCSS() {
+  return (
+    <div>
+        <h2 className={styles.title}>Título Teste</h2>
+    </div>
+  )
+}
+
+export default ComponenteCSS
+```
+
+Enquanto o **CSS** é criado agora um arquivo ``.module.css``, importado a partir do ``import styles from './ComponenteCSS.module.css'``.
+A forma de definir uma classe é difente também, ela é chamada agora com ``className={styles.title}``, diferente de antes que era apenas o ``className='title'``.
+
+![Foto da Aplicação](./scr/texto%20não%20vazado.png)
+
+### Aula 21 - Classes Dinamicas
+
+Para fazer uma classe ser dinâmica, pode ser feito um ``if`` inline com o **operador ternário** (**?**) ``className={{nome da váriavel? valor_verdadeiro : valor_falso}}``.
+
+O código com um título alteravel ficou desta seguinte forma:
+
+``` JSX
+import React, { useState } from 'react'
+import './ComponenteCSSDinamico.css'
+
+function ComponenteCSSDinamico() {
+    const [ativo, setAtivo] = useState(false)
+
+    function handleClick(){
+        if (ativo) {
+            setAtivo(false);
+        } else {
+            setAtivo(true);
+        }
+    }
+
+    return (
+        <div>
+            <h2 className={ativo?'ativado':'desativado'}> Titulo com CSS Dinamico </h2>
+            <button onClick={handleClick}> Clique aqui para alterar o titulo </button>
+        </div>
+    )
+}
+
+export default ComponenteCSSDinamico
+```
+
+### Aula 22 - Listas no React
+
+Você pode exibir uma lista fixa com apenas o **HTML** usando o ``<li></li>``, porém isso é diferente quando ela vai ser dinâmica e os valores exibidos vindos
+a partir de um *Array*. Para isso deve primeiro chamar uma função do **JS** chamado de `map` que basicamente seria mapear e exibir os valores.
+A seguir o código usado para exemplo:
+
+``` JSX
+import React, { useState } from 'react'
+
+function ListaExemplo() {
+    const [itens, setItem] = useState(["maçã", "Banana", "Laranja"]);
+
+    return (
+        <div>
+            <ul>
+                {/*
+                Primeiramente nós abrimos o código JS, e colocamos a função para arrays, "map",
+                ela é para pegar o valor de cada elemento do array e mostrar os resultados.
+
+                O (item, index), seria o nome do valor, e o nome da númeração.
+                <li></li> é a lista em HTML
+                Ela exige uma chave, a "key" para que possibilite a manipulação destes valores posteriormente,
+                isso básicamente é mostrar a posição daquele valor no array.
+                */}
+                {itens.map((item,index) => (<li key={index}>{index + ": " + item}</li>))}
+            </ul>
+        </div>
+    )
+}
+
+export default ListaExemplo
+```
+
+### Aula 23 - Previous State
+
+Seria pegar o estado anterior de um componente, que mais funciona como pegar o estado atual. Ele pode ser usado para você saber o estado atual de um array e retirar algo ou acrescentar.
+O código usado para exemplo é o seguinte:
+
+``` JSX
+import React, { useState } from 'react'
+
+function ListaExemplo() {
+    const [itens, setItem] = useState(["maçã", "Banana", "Laranja"]);
+
+    function RemoverUltimoItemDaLista(){
+        /* 
+        Usa o setItem para mudar a useState, primeiramente pegamos o Previous State e usando ele, é chamado a função slice para retirar um elemento sendo (Inicio, Fim)
+        o -1 é usado pois ele remete que o fim é o último elemento. E o último é o que vai ser retirado com o slice.
+        */
+        setItem((prevItem) => prevItem.slice(0, -1));
+    }
+
+    return (
+        <div>
+            <ul>
+                {itens.map((item,index) => (<li key={index}>{index + ": " + item}</li>))}
+            </ul>
+            <button onClick={RemoverUltimoItemDaLista}>
+                Remover último item da lista
+            </button>
+        </div>
+    )
+}
+
+export default ListaExemplo
+```
+
+### Aula 24 - Renderização Condicional
+
+#### Operador Ternário (?)
+
+Este operador é para realizar um if-else inline.
+
+#### Operador &&
+
+Conhecido como `AND`, no JS ele server para fazer um if inline.
+
+Código com exemplo de funcionamento dos dois:
+
+``` JSX
+import React, {useState} from 'react'
+
+function RenderizacaoCondicional() {
+    const[mostrarTexto, setMostrarTexto] = useState(false);
+    const[numero, setNumero] = useState(0);
+
+  return (
+    <div>
+        {/*Exemplo de operador &&*/}
+        <button onClick={()=>setMostrarTexto(!mostrarTexto)}> Alternar Texto </button>
+        {mostrarTexto && <p>Este texto aparecer porque <code>mostrarTexto</code> está como <code>true</code>!</p>}
+
+        {/*Exemplo de operador ternário*/}
+        <button onClick={()=>setNumero(numero + 1)}>Incrementar Número</button>
+        <p>O número {numero} é {numero % 2 === 0 ? "par" : "ímpar"}</p>
+    </div>
+  )
+}
+
+export default RenderizacaoCondicional
+```
