@@ -481,3 +481,204 @@ function RenderizacaoCondicional() {
 
 export default RenderizacaoCondicional
 ```
+
+### Aula 25 - Propriedades (Props)
+
+As **Props** nada mais é do que a abreviação de propriedades, elas podem ser recebidas por um componente filho.
+Para o recebimento dessa informação é usado ``props`` como parâmetro do componente.
+
+``` JSX
+// Aluno.jsx
+
+function Aluno(props) {
+  return (
+    <div>
+        <ul>
+            <li>Nome: {props.nome}</li>
+            <li>Curso: {props.curso}</li>
+            <li>Turma: {props.turma}</li>
+        </ul>
+    </div>
+  )
+}
+
+export default Aluno
+```
+
+``` JSX
+// App.jsx
+import './App.css'
+import Aluno from './components/Aluno'
+
+function App() {
+  return (
+    <>
+      <Aluno nome="João" curso="React" turma="01" />
+      <Aluno nome="Gustavo" curso="Java" turma="02" />
+    </>
+  )
+}
+
+export default App
+```
+
+#### Desestruturação (Destructuring)
+
+Além de fazer desta forma, pode ser feito uma **desestruturação** utilizando o *destructuring*, que seria usar um elemento do **JS** para chamar cada var separadamente.
+
+> Praticamente vira quase igual chamar parâmetros em uma função do C# ~Autor
+
+``` JSX
+// Aluno.jsx
+
+function Aluno({nome, curso, turma}) {
+  return (
+    <div>
+        <ul>
+            <li>Nome: {nome}</li>
+            <li>Curso: {curso}</li>
+            <li>Turma: {turma}</li>
+        </ul>
+    </div>
+  )
+}
+
+export default Aluno
+```
+
+**App.jsx** continua a mesma coisa.
+
+#### Props com utilização de Arrays
+
+Para facilitar pode ser utilizado os arrays para enviar as props, então no componente pai ou que contém as props vai ter a seguinte alteração.
+
+``` JSX
+// Aluno.jsx
+function Aluno({props}) {
+  return (
+    <div>
+        <ul>
+            <li>Nome: {props.nome}</li>
+            <li>Curso: {props.curso}</li>
+            <li>Turma: {props.turma}</li>
+        </ul>
+    </div>
+  )
+}
+
+export default Aluno
+```
+
+``` JSX
+// App.jsx
+import './App.css'
+import Aluno from './components/Aluno'
+
+function App() {
+  const alunos= [
+    {nome: "Alex", curso: "React", turma: "01"},
+    {nome: "Bernardo", curso: "React", turma: "01"},
+    {nome: "Davi", curso: "React", turma: "01"},
+    {nome: "Gabriel", curso: "React", turma: "01"},
+    {nome: "Leonardo", curso: "React", turma: "01"},
+    {nome: "Alessandro", curso: "Java", turma: "02"},
+    {nome: "Fábio", curso: "Java", turma: "02"},
+    {nome: "Maria", curso: "Java", turma: "02"},
+    {nome: "Nathan", curso: "Java", turma: "02"},
+    {nome: "Otávio", curso: "Java", turma: "02"},
+  ]
+
+  return (
+    <>
+      {alunos.map((aluno, index) => (
+        <Aluno key={index} props={aluno} />
+      ))}
+    </>
+  )
+}
+
+export default App
+```
+
+### Aula 26 - Prop Childrens
+
+Esse conceito é fazer elementos e componentes passarem como filhos de um componente pai para outro componente.
+
+``` JSX
+// Caixa.jsx
+
+function Caixa({children}) {
+  return (
+    <div>
+        <h2>Exemplo de prop <code>children</code></h2>
+        {children}
+    </div>
+  )
+}
+
+export default Caixa
+```
+
+``` JSX
+import './App.css'
+import Caixa from './components/Caixa'
+
+function App() {
+
+  return (
+    <>
+      <Caixa>
+        <h3>informação Importante!</h3>
+        <p>Este componente serve como exemplo do uso de prop <code>children</code>!</p>
+      </Caixa>
+    </>
+  )
+}
+
+export default App
+```
+
+### Aula 27 - Funções como prop
+
+Seria passar uma função como prop para um componente.
+
+``` JSX
+// BotaoIncrementar.jsx
+
+function BotaoIncrementar({ funcao }) {
+    return (
+        <div>
+            <button onClick={funcao}>Incrementar</button>
+        </div>
+    )
+}
+
+export default BotaoIncrementar
+```
+
+``` JSX
+import React, {useState} from 'react'
+import './App.css'
+import BotaoIncrementar from './components/BotaoIncrementar'
+
+function App() {
+  const [valor_incrementado, setValorIncrementado] = useState(0);
+
+  function incrementarValor() {
+    setValorIncrementado(valor_incrementado + 1);
+  }
+
+  return (
+    <>
+      <h2>Você clicou neste botão {valor_incrementado} vezes!</h2>
+      <BotaoIncrementar funcao={incrementarValor} />
+    </>
+  )
+}
+
+export default App
+```
+
+## ACABOU O MÓDULO
+
+O módulo seguinte é o [Módulo 3 - Jogo da Velha (Tic-Tac-Toe)](modulo_3-jogo_da_velha.md)!

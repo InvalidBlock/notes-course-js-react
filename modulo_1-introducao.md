@@ -152,3 +152,7 @@ createRoot(document.getElementById('root')).render(
 ```
 
 O `main.jsx` é o código-fonte praticamente, ele é o que define o `id="root"` que no `index.html` era chamado. E nele há a presença do `<App />` que se refere a aplicação do `App.jsx`, ou seja, no corpo da página, por enquanto há apenas a apresentação da aplicação **App** definida em `App.jsx`.
+
+## ACABOU O MÓDULO
+
+O módulo seguinte é o [Módulo 2 - Fundamentos do React](modulo_2-fundamentos_do_react.md).

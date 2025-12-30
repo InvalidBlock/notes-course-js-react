@@ -8,5 +8,11 @@
 
 [Link do Roteiro do Curso](https://drive.google.com/file/d/1ChehqBDr-ncAFzottUquGOzfL5Mbi5Uv/view?usp=sharing)
 
+### Módulos Teóricos
+
 - [Módulo 1 - Introdução](modulo_1-introducao.md)
 - [Módulo 2 - Fundamentos do React](modulo_2-fundamentos_do_react.md)
+
+### Módulos Prática
+
+- [Módulo 3 - Jogo da Velha (Tic-Tac-Toe)](modulo_3-jogo_da_velha.md)
