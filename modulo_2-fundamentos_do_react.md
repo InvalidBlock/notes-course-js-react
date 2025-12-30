@@ -1,11 +1,11 @@
 
 # Módulo 2 - Fundamentos do React
 
-[MD RAIZ](anotacoes_modulo_1.md)
+[MD RAIZ](anotacoes_geral.md)
 
 **Data de Inicio:** 27/12/2025
 
-**Data de Término:**
+**Data de Término:** 30/12/2025
 
 ## Aulas
 
