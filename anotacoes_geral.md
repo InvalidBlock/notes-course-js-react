@@ -16,3 +16,4 @@
 ### Módulos Prática
 
 - [Módulo 3 - Jogo da Velha (Tic-Tac-Toe)](modulo_3-jogo_da_velha.md)
+- [Módulo 4 - Jogo das Bandeira & HTTP](modulo_4-Jogo_das_Bandeiras_&_HTTP.md)

@@ -5,7 +5,7 @@
 
 **Data de Inicio:** 30/12/2025
 
-**Data de Término:**
+**Data de Término:** 02/01/2026
 
 ## Aulas
 
@@ -76,3 +76,11 @@ if (value === "X") {
 
 /// ... Código
 ```
+
+### Aula 32, 33, 34 ,35 , 36 e 37
+
+Como eu havia dito, este módulo é só prática então para realmente ver as coisas feitas veja nos [códigos](/Projetos/mod3-tic-tac-toe/).
+
+## ACABOU O MÓDULO
+
+O módulo seguinte é o [Módulo 4 - Jogo das Bandeiras & HTTP](/modulo_4-Jogo_das_Bandeiras_&_HTTP.md)!

@@ -1,3 +1,5 @@
+import './Square.css'
+
 function Square({ value, onClick }) {
   let style = null;
 
