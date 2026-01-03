@@ -1,0 +1,87 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+    box-shadow: 0 0 20px 2px cyan;
+    border: 1px solid #1E1E1E;
+    border-radius: 8px;
+
+    width: 500px;
+}
+
+.game-title {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #00FFFF;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.score {
+    border-radius: 3px;
+    padding: 0px 8px;
+    color: #ffffff;
+    font-size: 16px;
+    border : 1px solid #1E1E1E;
+    margin: 5px;
+}
+
+.correct {
+    border-color: #00FF00;
+    background-color: #00FF0020;
+}
+
+.wrong {
+    border-color: #FF0000;
+    background-color: #FF000020;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.option-button {
+    width: 250px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.option-button:hover {
+    box-shadow: cyan 0 0 10px 2px;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.option-button:disabled {
+    cursor: not-allowed;
+}
+
+.correct-option {
+    background-color: rgba(0, 255, 34, 0.199);
+    cursor: pointer;
+    transform: scale(1.05);
+    font-weight: bold;
+}
