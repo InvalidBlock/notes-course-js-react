@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": "2",
+      "text": "Estudar React e JS",
+      "done": true
+    },
+    {
+      "id": "6f31",
+      "text": "Estilizar campo: Nova Tarefa",
+      "done": false
+    },
+    {
+      "id": "ecbc",
+      "text": "Ler um cápitulo de um livro",
+      "done": false
+    }
+  ]
+}

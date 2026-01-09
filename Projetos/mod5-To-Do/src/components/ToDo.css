@@ -1,0 +1,57 @@
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    background:none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    color: white;
+}
+
+input[type='checkbox']{
+    accent-color: #aecfd2;
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.status-card {
+    border: 2px solid #f09b20;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    background: none;
+}
+
+.status-title {
+    font-size: 1.8rem;
+}
+
+.status-sub {
+    font-size: 1rem;
+    color: #fff8;
+}
+
+.status-circle {
+    background-color: #f09b20;
+    color: teal;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    border: 2px solid #fff4;
+}
